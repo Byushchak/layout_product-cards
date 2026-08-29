@@ -1,23 +1,23 @@
 @import 'variables';
 
 .card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 32px 16px 16px;
-  width: $card-width;
-  border: 1px solid $color-border;
+    border: 1px solid $color-border;
+    width: 200px;
+    padding: 32px 16px 16px;
 
   &__screen {
+    display: block;
     width: 160px;
     height: 134px;
-    margin-bottom: 40px;
+    margin: 0 auto 40px;
   }
+
 
   &__title {
     font-size: 12px;
     font-weight: 500;
     line-height: 18px;
+    color: $color-text;
     align-self: stretch;
     margin-bottom: 4px;
   }
@@ -67,6 +67,7 @@
 .reviews {
   &__number {
     font-size: 10px;
+    color: $color-text;
   }
 }
 
@@ -79,5 +80,6 @@
 
   &__money {
     font-weight: 700;
+    color: $color-text;
   }
 }
