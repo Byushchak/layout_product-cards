@@ -2,12 +2,12 @@
   display: flex;
 
   &__star {
-    width: 13px;
-    height: 13px;
+    width: 16px;
+    height: 16px;
     background-image: url('../images/star.svg');
     background-repeat: no-repeat;
-    background-size: contain;
-    margin-right: 6px;
+    background-position: center;
+    margin-right: 4px;
 
     &:last-child {
       margin-right: 0;
