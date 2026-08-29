@@ -1,3 +1,130 @@
+@import 'reset';
+
 body {
-  margin: 0;
+  font-family: Roboto, sans-serif;
+  color: #060b35;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 15px 15px;
+  width: 200px;
+  border: 1px solid #f3f3f3;
+
+  &__screen {
+    width: 160px;
+    height: 134px;
+    margin-bottom: 40px;
+  }
+
+  // .product__title
+
+  &__title {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    align-self: stretch;
+    margin-bottom: 4px;
+  }
+
+  // .product__code
+
+  &__code {
+    color: #616070;
+    font-size: 10px;
+    line-height: 14px;
+    align-self: stretch;
+    margin-bottom: 16px;
+  }
+
+  // .product__reviews
+
+  &__reviews {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    align-self: stretch;
+    margin-bottom: 24px;
+  }
+
+  // .product__price
+
+  &__price {
+    display: flex;
+    gap: 87px;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  // .product__button
+
+  &__button {
+    background-color: #00acdc;
+    color: #fff;
+    padding: 11px 68px;
+    width: 166px;
+    border: solid 1px #00acdc;
+    border-radius: 5px;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+
+    &:hover {
+      background-color: #fff;
+      color: #00acdc;
+    }
+  }
+}
+
+.reviews {
+  // .reviews__number
+
+  &__number {
+    font-size: 10px;
+  }
+}
+
+.stars {
+  display: flex;
+
+  &__star {
+    width: 13px;
+    height: 13px;
+    background-image: url('../images/star.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 5px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &--1 &__star:nth-child(-n + 1),
+  &--2 &__star:nth-child(-n + 2),
+  &--3 &__star:nth-child(-n + 3),
+  &--4 &__star:nth-child(-n + 4),
+  &--5 &__star:nth-child(-n + 5) {
+    background-image: url('../images/star-active.svg');
+  }
+}
+
+.price {
+  &__title {
+    color: #616070;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  &__money {
+    font-weight: 700;
+  }
 }
